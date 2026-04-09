@@ -3,86 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análisis Organizacional: Proyecto 4 Patas</title>
+    <title>Proyecto 4 Patas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div id="pantalla-inicio" class="cover-screen">
         <div class="cover-content">
-            <img src="https://i.ibb.co/s9XsyQq5/4ptas.jpg" alt="Logo Proyecto 4 Patas" class="logo-portada">
-            
-            <h1 class="titulo-portada">Análisis Organizacional: Proyecto 4 Patas</h1>
-            <p class="subtitulo-portada">Un estudio sobre organizaciones de la sociedad civil</p>
-            
-            <button id="btn-ingresar" class="main-btn btn-portada" onclick="ingresarALaWeb()">INGRESAR</button>
-            
-       
+            <img src="https://i.ibb.co/s9XsyQq5/4ptas.jpg" alt="Logo" class="logo-portada">
+            <h1 class="titulo-portada">PROYECTO 4 PATAS</h1>
+            <button class="btn-ingresar" onclick="ingresarALaWeb()">INGRESAR</button>
+        </div>
+    </div>
 
     <div id="pantalla-principal" class="hidden">
-        
         <header>
             <h1>PROYECTO 4 PATAS</h1>
-            <p>Análisis de Organización Civil</p>
         </header>
 
         <main class="menu-container">
-            
-            <button class="main-btn" onclick="toggleSeccion('org')">INFORMACIÓN DE LA ORGANIZACIÓN</button>
-            <div id="org" class="content hidden">
-                <ul class="lista-info">
+            <button class="main-btn" onclick="toggleSeccion('org')">ORGANIZACIÓN</button>
+            <div id="org" class="content">
+                <ul class="lista-guiones">
                     <li><strong>Nombre:</strong> Proyecto 4 Patas.</li>
-                    <li><strong>Creación:</strong> Entre los años 2005 y 2006 aproximadamente.</li>
+                    <li><strong>Creación:</strong> Se creó aproximadamente entre los años 2005 y 2006.</li>
                     <li><strong>Ubicación:</strong> Buenos Aires, Argentina.</li>
-                    <li><strong>Problemática:</strong> Abandono (más de 20 millones en situación de calle), maltrato y falta de conciencia social.</li>
+                    <li><strong>Problemática:</strong> Abandono de animales (más de 20 millones en situación de calle), maltrato animal y falta de educación y conciencia social.</li>
                 </ul>
             </div>
 
             <button class="main-btn" onclick="toggleSeccion('mvv')">MISIÓN, VISIÓN Y VALORES</button>
-            <div id="mvv" class="content hidden">
-                <p><strong>Misión:</strong> Proteger y defender animales en maltrato, explotación o abandono.</p>
-                <p><strong>Visión:</strong> Ser el hogar y salvación de animales en el mundo con miles de voluntarios.</p>
-                <p><strong>Valores:</strong> Amor, respeto, unidad e igualdad.</p>
+            <div id="mvv" class="content">
+                <p><strong>Misión:</strong> Proteger y defender animales en situaciones de maltrato, explotación de criaderos, trabajos forzados o abandono.</p>
+                <p><strong>Visión:</strong> Convertirse en el hogar y salvación de aquellos animales alrededor del mundo, contando con miles de voluntarios.</p>
+                <p><strong>Valores:</strong> Amor, respeto, unidad e igualdad para y con los animales y compañeros.</p>
             </div>
 
             <button class="main-btn" onclick="toggleSeccion('ambiente')">AMBIENTE ORGANIZACIONAL</button>
-            <div id="ambiente" class="content hidden">
+            <div id="ambiente" class="content">
                 <button class="sub-btn" onclick="toggleSeccion('interno')">AMBIENTE INTERNO</button>
-                <div id="interno" class="sub-content hidden">
-                    <p>Integrado por voluntarios, veterinarios y profesionales.</p>
-                    <p>Cultura basada en compromiso, solidaridad y empatía.</p>
+                <div id="interno" class="sub-content">
+                    <p><strong>Recursos Humanos:</strong> Voluntarios, veterinarios y profesionales.</p>
+                    <p><strong>Recursos Materiales:</strong> Alimento, camas, ropa y transportadores.</p>
+                    <p><strong>Cultura:</strong> Compromiso, responsabilidad, solidaridad y empatía.</p>
                 </div>
                 <button class="sub-btn" onclick="toggleSeccion('externo')">AMBIENTE EXTERNO</button>
-                <div id="externo" class="sub-content hidden">
-                    <p>Dependencia de donaciones que limita los recursos.</p>
-                    <p>Colaboración fundamental de vecinos y voluntarios.</p>
+                <div id="externo" class="sub-content">
+                    <p><strong>Factor Económico:</strong> Dependencia de donaciones y ventas solidarias que limita la cantidad de animales que pueden ayudar.</p>
+                    <p><strong>Comunidad:</strong> Colaboración de vecinos y voluntarios fundamental para la supervivencia.</p>
                 </div>
             </div>
 
             <button class="main-btn" onclick="toggleSeccion('foda')">FODA</button>
-            <div id="foda" class="content hidden">
-                <p><strong>Fortalezas:</strong> Impacto directo y educación social.</p>
-                <p><strong>Oportunidades:</strong> Conciencia social y apoyo externo.</p>
-                <p><strong>Debilidades:</strong> Dependencia de voluntarios y capacidades limitadas.</p>
-                <p><strong>Amenazas:</strong> Abandono masivo y falta de educación.</p>
+            <div id="foda" class="content">
+                <p><strong>Fortalezas:</strong> Acción directa con impacto real y educación/concientización social.</p>
+                <p><strong>Oportunidades:</strong> Apoyo externo y mayor conciencia social.</p>
+                <p><strong>Debilidades:</strong> Dependencia de donaciones/voluntarios y capacidades limitadas.</p>
+                <p><strong>Amenazas:</strong> Sobrepoblación animal, abandono masivo y falta de educación.</p>
             </div>
 
             <button class="main-btn" onclick="toggleSeccion('social')">INSTAGRAM Y MERCH</button>
-            <div id="social" class="content hidden">
-                <p>Canal oficial: <strong>@proyecto4patas</strong></p>
+            <div id="social" class="content">
+                <p>Seguinos en IG: <strong>@proyecto4patas</strong></p>
+                <hr>
                 <div class="contenedor-fotos">
                     <img src="https://i.ibb.co/Df0SmTny/IMG-1290.jpg" alt="Merch 1" class="img-merch">
                     <img src="https://i.ibb.co/PGRXnPm7/IMG-1291.jpg" alt="Merch 2" class="img-merch">
                     <img src="https://i.ibb.co/7J519Fxy/IMG-1292.jpg" alt="Merch 3" class="img-merch">
                 </div>
             </div>
-
         </main>
 
         <footer class="firma">
             PROGRAMADO POR TOMÁS GARNICA
         </footer>
-
     </div>
 
     <script src="script.js"></script>
