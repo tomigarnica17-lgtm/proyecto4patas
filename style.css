@@ -1,12 +1,94 @@
-/* Paleta Azul Francia Profesional */
+/* =========================================
+   ESTILOS GENERALES Y PALETA AZUL FRANCIA
+   ========================================= */
 body {
-    background-color: #f4f7f9;
+    background-color: #f0f5ff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #002d6b;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
+    padding: 0;
+    height: 100vh; /* Ocupa todo el alto de la pantalla */
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* =========================================
+   ESTILOS DE LA PANTALLA DE INICIO (PORTADA)
+   ========================================= */
+.cover-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0047AB; /* Azul Francia */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999; /* Asegura que esté por encima de todo */
+}
+
+.cover-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 80%;
+}
+
+.logo-portada {
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.titulo-portada {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.subtitulo-portada {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-top: 0;
+}
+
+.btn-portada {
+    font-size: 1.3rem;
+    padding: 20px 40px;
+    background-color: white;
+    color: #0047AB; /* Azul Francia */
+    margin-top: 30px;
+}
+
+.btn-portada:hover {
+    background-color: #e0e1dd;
+    color: #003380;
+}
+
+.firma-portada {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   ESTILOS DE LA PANTALLA PRINCIPAL (LO YA ARMADO)
+   ========================================= */
+#pantalla-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 40px 20px;
 }
 
@@ -19,7 +101,6 @@ header h1 {
     color: #0047AB; /* Azul Francia */
     font-size: 2.5rem;
     margin-bottom: 5px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .menu-container {
@@ -37,24 +118,21 @@ header h1 {
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    transition: background 0.3s;
 }
 
 .main-btn:hover {
     background-color: #003380;
-    transform: translateY(-2px);
 }
 
 .content {
     background-color: #ffffff;
     border: 2px solid #0047AB;
     padding: 20px;
-    display: none;
     border-radius: 0 0 6px 6px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.lista-guiones {
+.lista-info {
     list-style-type: "- ";
     padding-left: 20px;
 }
@@ -67,7 +145,6 @@ header h1 {
     margin-top: 10px;
     border: none;
     border-radius: 4px;
-    font-weight: bold;
     cursor: pointer;
 }
 
@@ -76,42 +153,28 @@ header h1 {
     padding: 15px;
     display: none;
     margin-top: 5px;
-    border-left: 4px solid #4169E1;
 }
 
-/* Estilos de las Imágenes de Merch */
+/* Merch */
 .contenedor-fotos {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .img-merch {
-    width: 30%; /* Tres por fila en pantallas grandes */
+    width: 30%;
     min-width: 150px;
     border: 2px solid #0047AB;
     border-radius: 8px;
-    transition: 0.3s;
 }
 
-.img-merch:hover {
-    transform: scale(1.1);
-}
-
-.hidden {
-    display: none;
-}
+/* Firma */
 .firma {
     margin-top: 50px;
     padding: 20px;
-    width: 100%;
     text-align: center;
     font-weight: bold;
-    font-size: 0.9rem;
-    color: #0047AB; /* Azul Francia */
-    letter-spacing: 2px; /* Espaciado entre letras para que quede más pro */
-    border-top: 1px solid #d1d1d1;
-    opacity: 0.8;
+    color: #0047AB;
 }
